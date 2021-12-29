@@ -1,0 +1,14 @@
+.charts-page{
+    h1{
+        margin: 10px;
+    }
+}
+.chart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+svg{
+    width: 400px;
+}
+}

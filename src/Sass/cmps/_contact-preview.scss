@@ -1,0 +1,48 @@
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-preview {
+    img {
+        width: 50px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        background-color: #5745ea;
+    }
+}
+
+table {
+    width: 90%;
+    tr {
+        td {
+            text-align: center;
+            padding: 5px;
+            min-width: 50px;
+            border-radius: 10px;
+            background-color: #5745ea;
+        }
+
+        td:first-of-type {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(255, 0, 0, 0);
+        }
+
+        td:nth-of-type(2) {
+            background-color: rgba(255, 0, 0, 0);
+            width: 20px;
+        }
+        td.option {
+            background: cornsilk;
+            color: #212121;
+
+            &:hover {
+                background-color: rgba(255, 248, 220, 0.712);
+            }
+        }
+    }
+}

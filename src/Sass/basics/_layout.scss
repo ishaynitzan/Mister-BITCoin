@@ -1,0 +1,69 @@
+.container {
+    max-width: $normal-breakpoint;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 20px;
+
+
+    @include for-mobile-layout {
+        max-width: initial;
+    }
+
+    @include for-tablet-layout {
+        max-width: $mobile-breakpoint;
+    }
+
+    @include for-normal-layout {
+        max-width: $tablet-breakpoint;
+    }
+
+    @include for-wide-layout {
+        max-width: $normal-breakpoint;
+    }
+}
+
+// GRIDS
+.simple-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 30px;
+}
+
+/* LAYOUT */
+html {
+    height: 100%;
+  }
+  body {
+    height: 100%;
+  }
+  #root {
+    height: 100%;
+  }
+  
+  .App {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: #fff;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #0d1323;
+    overflow-x: none; 
+    overflow-y: auto; 
+  }
+  
+  .contacts-page,
+  .home,
+  .charts-page,
+  .details-page{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
